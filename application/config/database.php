@@ -75,11 +75,11 @@ $query_builder = TRUE;
 $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => $url["ec2-54-235-193-0.compute-1.amazonaws.com"],
-	'username' => $url["giagvmwjreuowb"],
-	'password' => $url["69488f7107c5a11c70a71155d4cb88db04bbfe896af3c1f9a3cd2457c0a5ed84"],
-	'database' => substr($url["d66somp05rnrck"], '/'),
-	'dbdriver' => 'postgre',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => '',
+	'database' => 'diabetesc',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),

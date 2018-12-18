@@ -3,8 +3,8 @@
     class M_user extends CI_Model{
         private $table="user";
 
-        function getDataUser(){
-            $query = $this->db->get($this->table);
+        function getDataUser($email,$password){
+            $query = $this->db->query("SELECT * FROM user where email = '$email' and password = '$password'");
             return $query->result();
         }
         function insertUser($data){
